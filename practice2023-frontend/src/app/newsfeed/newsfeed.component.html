@@ -1,0 +1,20 @@
+<app-addnews (submitted)="handleChildSubmitted()" *ngIf="isAuthenticated"></app-addnews>
+
+
+<div class="post" *ngFor="let post of posts">
+    <div class="post-header">
+    <div>
+    <div>
+        <img class="author-photo" src="{{baseUrl}}/img/{{post.authorPhoto}}">
+        <div class="author">
+        <div class="author-nicname">{{post.author}}</div>
+            <div class="publish-date"></div>{{post.publishDate| date: 'd.MM.yyyy в HH:mm'}}</div>
+    </div>
+</div>
+
+        </div>
+    <div class="post-body">
+        <div>{{post.text}}</div>
+        <div *ngIf="post.photo"><img  src="{{baseUrl}}/img/{{post.photo}}"/></div>
+    </div>
+</div>

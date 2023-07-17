@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+h2 {
+    font-size: 170px;
+    color: chocolate;
+    border: 3px solid red;
+    padding: 40px ;
+    margin: 500px;
+    background-color: rgb(189, 84, 175);
+};
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

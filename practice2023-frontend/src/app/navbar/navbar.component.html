@@ -1,0 +1,24 @@
+<div class="nav">
+    <!-- лого -->
+        <div  class="logo">
+            <a routerLink="/">
+                <img src="/assets/img/logo.png"/>
+            </a>
+        </div>
+    
+        <!--авторизован -->
+    
+        <div *ngIf="isAuthenticated"  class="nav-right">
+            <div class="login">{{login}}</div>
+            <img src="{{photo}}" class="photo"/>
+            <a (click)="logout()" class="exit">
+             <img src="/assets/img/logout.png"/>
+            </a>
+         </div>
+    <!-- не авторизован -->
+    
+        <div *ngIf="!isAuthenticated" class="nav-right">
+            <a routerLink="/login">Вход</a>
+            <a routerLink="/register">Регистрация</a>
+        </div>
+    </div>

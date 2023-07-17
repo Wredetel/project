@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\1491306305_beach.jpg",
+      "PackagePath": "staticwebassets\\img\\1491306305_beach.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\1562069947_1.jpg",
+      "PackagePath": "staticwebassets\\img\\1562069947_1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\2023-07-10_10-10-18.png",
+      "PackagePath": "staticwebassets\\img\\2023-07-10_10-10-18.png"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\2023-07-10_10-10-42.png",
+      "PackagePath": "staticwebassets\\img\\2023-07-10_10-10-42.png"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\35af0e51-d63a-4e62-bec2-ec7412142bee.jpg",
+      "PackagePath": "staticwebassets\\img\\35af0e51-d63a-4e62-bec2-ec7412142bee.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\9902a099-dd3e-43b7-ada0-fd9bca5f0e83.jpg",
+      "PackagePath": "staticwebassets\\img\\9902a099-dd3e-43b7-ada0-fd9bca5f0e83.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\b3ed67d1-8463-4332-9e2d-f863282ce4f3.jpg",
+      "PackagePath": "staticwebassets\\img\\b3ed67d1-8463-4332-9e2d-f863282ce4f3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\daria.png",
+      "PackagePath": "staticwebassets\\img\\daria.png"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\e4750fc2-92a6-4a61-a736-c85ff104f1e6.jpg",
+      "PackagePath": "staticwebassets\\img\\e4750fc2-92a6-4a61-a736-c85ff104f1e6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\iliya.png",
+      "PackagePath": "staticwebassets\\img\\iliya.png"
+    },
+    {
+      "Id": "D:\\desktop\\точноготовая\\projects\\practice2023-backend\\wwwroot\\img\\sasha.png",
+      "PackagePath": "staticwebassets\\img\\sasha.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.practice2023-backend.props",
+      "PackagePath": "build\\practice2023-backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.practice2023-backend.props",
+      "PackagePath": "buildMultiTargeting\\practice2023-backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.practice2023-backend.props",
+      "PackagePath": "buildTransitive\\practice2023-backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.practice2023-backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

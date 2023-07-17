@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\practice2023-backend.props" />
+</Project>

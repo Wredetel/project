@@ -1,0 +1,162 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-header">Регистрация нового пользователя</div>
+    <div class="top-pane">
+      <div class="left-pane">
+        <div>
+          <label>Псевдоним*</label>
+          <input type="text"  formControlName="login" />
+  
+          <div class="error" *ngIf="login.invalid && (login.dirty || login.touched)">
+            <div *ngIf="login.errors?.['maxlength']">
+              Длина текста не может превышать 20 символов
+            </div>
+            <div *ngIf="login.errors?.['minlength']">
+              Длина текста не может меньше 3 символов
+            </div>
+            <div *ngIf="login.errors?.['required']">
+              Поле обязательно для заполнения
+            </div>
+            <div *ngIf="login.errors?.['pattern']">
+              Поле может содержать только латинский буквы, цифры и подчеркивание
+            </div>
+            <!--TODO добавить проверку, что логин уже занят-->
+            <div *ngIf="login.errors?.['alreadyInUse']">
+              Такой псевдоним уже занят
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <label>Почта*</label>
+          <input type="email" formControlName="email" mailto:placeholder="example@ex.ru" />
+  
+          <div class="error" *ngIf="email.invalid && (email.dirty || email.touched)">
+            <div *ngIf="email.errors?.['maxlength']">
+              Длина текста не может превышать 31 символов
+            </div>
+            <div *ngIf="email.errors?.['email']">
+              Не соответствует формату почтового адреса
+            </div>
+            <div *ngIf="email.errors?.['required']">
+              Поле обязательно для заполнения
+            </div>
+            <!--TODO добавить проверку, что почта уже используется-->
+            <div *ngIf="email.errors?.['alreadyInUse']">
+              Такая почта уже зарегистрирована
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <label>Пароль*</label>
+          <input type="password" formControlName="password" />
+  
+          <div class="error" *ngIf="password.invalid && (password.dirty || password.touched)">
+            <div *ngIf="password.errors?.['maxlength']">
+              Длина текста не может превышать 20 символов
+            </div>
+            <div *ngIf="password.errors?.['minlength']">
+              Длина текста не может меньше 6 символов
+            </div>
+            <div *ngIf="password.errors?.['required']">
+              Поле обязательно для заполнения
+            </div>
+            <div *ngIf="password.errors?.['pattern']">
+              Поле может собержать только латинский буквы, цифры и подчеркивание
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <label>Подтвердите пароль*</label>
+          <input type="password" formControlName="passwordConfirm" />
+  
+          <div class="error" *ngIf="passwordConfirm.invalid && (passwordConfirm.dirty || passwordConfirm.touched)">
+            <div *ngIf="passwordConfirm.errors?.['passwordsMistmatch']">
+              Пароли не совпадают
+            </div>
+            <div *ngIf="passwordConfirm.errors?.['required']">
+              Поле обязательно для заполнения
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <label>Фамилия</label>
+          <input type="text" formControlName="lastName" />
+  
+          <div class="error" *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)">
+            <div *ngIf="lastName.errors?.['maxlength']">
+              Длина текста не может превышать 31 символов
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <label>Имя</label>
+          <input type="text" formControlName="firstName" />
+  
+          <div class="error" *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)">
+            <div *ngIf="firstName.errors?.['maxlength']">
+              Длина текста не может превышать 31 символов
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="preview-pane">
+        <img [src]="preview" class="preview">
+        <img *ngIf="!preview" src="/assets/img/no avatar.png" class="preview">
+      </div>
+    </div>
+  
+    <div class="bottom-pane">
+      <div>
+        <label>Выберите фото</label>
+        <input type="file" formControlName="avatar" accept="image/*" (change)="selectFile($event)" />
+      </div>
+  
+      <div>
+        <label>Контактная информация</label>
+        <textarea formControlName="contactInfo"> </textarea>
+  
+        <div class="error" *ngIf="contactInfo.invalid && (contactInfo.dirty || contactInfo.touched)">
+          <div *ngIf="contactInfo.errors?.['maxlength']">
+            Длина текста не может превышать 255 символов
+          </div>
+        </div>
+      </div>
+  
+      <div>
+        <label for="about">О себе</label>
+        <textarea id="about" formControlName="about"> </textarea>
+  
+        <div class="error" *ngIf="about.invalid && (about.dirty || about.touched)">
+          <div *ngIf="about.errors?.['maxlength']">
+            Длина текста не может превышать 255 символов
+          </div>
+        </div>
+      </div>
+  
+      <div>
+        <label for="achievements">Достижения</label>
+        <textarea formControlName="achievement"> </textarea>
+  
+        <div class="error" *ngIf="achievements.invalid && (achievements.dirty || achievements.touched)">
+          <div *ngIf="achievements.errors?.['maxlength']">
+            Длина текста не может превышать 255 символов
+          </div>
+        </div>
+      </div>
+  
+      <div>
+        <label class="required-label">* Поля обязательные для заполнения</label>
+        <input class="submit-button" type="submit" value="Зарегистрироваться" [disabled]="!registerForm.valid" />
+      </div>
+    </div>
+  </form>
+  
+  <div class="login-pane">
+    Уже есть аккаунт?
+    <input type="button" class="login-button" routerLink="/login" value="Войти" />
+  </div>

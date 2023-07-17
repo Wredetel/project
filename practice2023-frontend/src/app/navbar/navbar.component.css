@@ -1,0 +1,39 @@
+.nav{
+    background-color: #c7d2d9;
+}
+
+.logo{
+    height: 40px;
+    display: inline-block;
+}
+.nav-right{
+    margin-left: auto;
+    margin-right: 15px;
+ float: right;
+ display: inline;
+}
+
+
+.photo{
+    width: 40px;
+    height: 40px;
+    display: inline;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.login{
+    display: inline;
+    margin-right: 5px;
+}
+.exit{
+    display: inline;
+}
+
+.nav-right>a{
+    padding: 10px;
+    vertical-align: middle;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    text-decoration: none;
+}

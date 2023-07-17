@@ -1,0 +1,44 @@
+form { 
+ 
+    margin: 10px auto; 
+    border: 1px solid #d5d5d5; 
+    padding: 5px; 
+    width: 200px; 
+} 
+ 
+.form-header { 
+ 
+    background-color: #dce4e9; 
+    margin: -5px; 
+    padding: 5px; 
+} 
+ 
+label { 
+    display: block; 
+    margin: 5px 0; 
+} 
+ 
+.remember-me-label { 
+    display: inline; 
+    margin: 0 px; 
+} 
+ 
+.submit-button { 
+    background-color: #dce4e9; 
+    border: 1px solid #d5d5d5; 
+    width: 150px; 
+} 
+ 
+.register-pane { 
+    margin: 20px auto; 
+    width: 300px; 
+} 
+ 
+.register-button { 
+    background-color: #dce4e9; 
+    border: 1px solid #d5d5d5; 
+    width: 150px; 
+}
+.error{
+    color: red;
+}

@@ -1,0 +1,34 @@
+.post {
+    margin: 10px;
+    border: 1px solid #d5d5d5;
+    padding: 5px;
+}
+
+.post-header {
+    background-color: #dce4ed;
+    margin: -5px;
+    padding: 5px;
+}
+
+.post-body {
+    background-color: white;
+    margin: -5px;
+    padding: 5px;
+}
+
+.author-photo {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.author {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: baseline;
+}
+
+.author-nicname {
+    font-size: 12px; 
+}

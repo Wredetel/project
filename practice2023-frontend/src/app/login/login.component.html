@@ -1,0 +1,36 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-header">Авторизация</div>
+    <div>
+        <label>Псевдоним</label>
+        <input type="text" formControlName="login">
+        <div class="error" *ngIf="login.invalid && (login.dirty || login.touched)">
+            <div *ngIf="login.errors?.['maxlength']"></div>
+            длина не более 20
+        </div>
+    </div>
+
+    <diV>
+        <label>Пароль</label>
+        <input type="password" formControlName="password">
+        <div class="error" *ngIf="password.invalid && (password.dirty || password.touched)">
+            <div *ngIf="password.errors?.['maxlength']"></div>
+            длина не более 20
+        </div>
+        <div>
+            <input type="checkbox" formControlName="rememberMe">
+            <label class="remember-me-label">запомнить пароль</label>
+        </div>
+
+        <div class="error" *ngIf="loginForm.errors?.['badLogin']">
+                    неверный лог или пароль
+        </div>
+        
+        <div>
+            <input class="submit-button" type="submit" valut="Войти" [disabled]="!loginForm.valid">
+        </div>
+    </diV>
+</form>
+
+<div class="register-pane">
+    Нет аккаунта? <input class="register-button" type="button" routerLink="/register" value="Зарегестрироваться">
+</div>

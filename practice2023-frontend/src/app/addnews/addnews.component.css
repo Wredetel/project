@@ -1,0 +1,31 @@
+form{
+    border: 1px solid #D4D4D4;
+    padding: 5px;
+    margin: 10px;
+}
+
+.form-header {
+    background-color: #DCE4E9;
+    padding: -5px;
+    margin: -5px;
+}
+
+ label{
+     display: block;
+     padding: 5px 0;
+ }
+
+textarea{
+       width: 100%;
+       height: 150px;
+     }
+.add-button{
+    background: #dce4e9;
+    border: 1px solid #d5d5d5;
+    width: 150px;
+    float: right;
+}
+
+.error{
+    color: red;
+}

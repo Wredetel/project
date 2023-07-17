@@ -1,0 +1,23 @@
+<form [formGroup]="AddnewsForm" (ngSubmit)="onSubmit()">
+    <div class="form-header">Добавление новой записи</div>
+    <div>
+        <div>
+            <label>Введите текст</label>
+            <textarea formControlName="text"> </textarea>
+            <div *ngIf="text.invalid">
+                <div *ngIf="text.errors?.['maxlength']">
+                    Длинна текста не может привышать 4095 символов
+                </div>
+                    <div class="error" *ngIf="AddnewsForm.errors?.['atLeastRequired']">
+                    необходимо добавить текст для публикации без файла
+                    </div>
+            </div>
+        </div>
+        <div>
+            <label>Прикрепить изображение</label>
+            <input type="file" formControlName="file" (change)="onFileChange($event)" />
+            <input class="add-button" type="submit" value="Добавить" [disabled]="!AddnewsForm.valid" />
+        </div>
+        
+    </div>
+</form>
